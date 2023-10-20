@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel App</title>
+    <!-- link of Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link of main css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-div clearfix">
+        <div class="container">
+            <canvas id="wheel"></canvas>
+            <button id="btn"></button>
+            <img src="spinner-arrow-.svg" alt="spinner-arrow" />
+          </div>
+          <div class="add-list">
+            <h2>Add Names</h2>
+            <ul class="name-list">
+                <li>Ibrahim</li>
+                <li>Jasim</li>
+                <li>Jisan</li>
+                <li>Teebro</li>
+                <li>Rifat</li>
+                <li>Shofiq</li>
+            </ul>
+          </div>
+      </div>
+      <div class="resultDiv clearfix">
+          <button id="spin-btn">Spin it!</button>
+          <div id="final-value">
+            <p>"Jasim" is winner!</p>
+          </div>
+      </div>
+    </div>
+    <!-- link of Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- link of Chart JS Plugin for displaying text over chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- link of  main Script file -->
+    <script src="script.js"></script>
+  </body>
+</html>
